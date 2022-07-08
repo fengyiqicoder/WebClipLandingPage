@@ -1,0 +1,49 @@
+@media only screen and (max-device-width : 500px) {
+    /* Styles */
+    div {
+        text-align: center;
+        width: 90%;
+        position: relative;
+        left: 5%;
+    }
+
+    h1 {
+        font-size: 90px;
+    }
+
+    h2 {
+        font-size: 60px;
+    }
+
+    h3 {
+        font-size: 50px;
+    }
+
+    .icon {
+        width: 200px;
+    }
+
+    .downloadImage {
+        width: 60%;
+    }
+
+    p {
+       font-size: 40px;
+    }
+}
+
+@media only screen and (min-device-width : 500px) {
+    .downloadImage {
+        width: 200px;
+    }
+    .icon {
+        width: 100px;
+    }
+    /* Styles */
+    div {
+        text-align: center;
+        width: 40%;
+        position: relative;
+        left: 30%;
+    }
+}

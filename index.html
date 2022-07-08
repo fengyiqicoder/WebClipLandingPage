@@ -1,0 +1,177 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="apple-itunes-app" content="app-id=1482080766">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>WebClip - </title>
+    <!-- <category>search app/ios app/mobile search tool/ios search app/best ios search app</category> -->
+    <meta name="description" content="EdmundSoftWare amazing experience ">
+
+    <!-- <link rel="stylesheet" type="text/css" href="index.css"> -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LGLHMN8G9J"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-LGLHMN8G9J');
+    </script>
+    <link href="/dist/output.css" rel="stylesheet">
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.0.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#CTA").click(function () {
+                let email = $("#email").val();
+                let project = "Beta.indieceo.me"
+                var settings = {
+                    "url": "https://us-central1-landingpage-355609.cloudfunctions.net/landingpage?email=" +
+                        email + "&project=" + project,
+                    "method": "GET",
+                    "timeout": 0,
+                };
+
+                window.alert("Thanks!\nWe will notify you by email when the product is available.");
+                $("#email").val('');
+
+                $.ajax(settings).done(function (response) {
+                    console.log(response);
+                });
+            });
+            $("#CTA2").click(function () {
+                let email = $("#email2").val();
+                let project = "Beta.indieceo.me.frombuttom"
+                var settings = {
+                    "url": "https://us-central1-landingpage-355609.cloudfunctions.net/landingpage?email=" +
+                        email + "&project=" + project,
+                    "method": "GET",
+                    "timeout": 0,
+                };
+
+                window.alert("Thanks!\nWe will notify you by email when the product is available.");
+                $("#email2").val('');
+
+                $.ajax(settings).done(function (response) {
+                    console.log(response);
+                });
+            });
+        });
+
+    </script>
+</head>
+
+<body>
+    <header class="text-gray-400 bg-gray-900 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+          <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
+            <img src="appicon.svg" fill="none" stroke="currentColor" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="2"
+                class="w-10 h-10 text-white p-2" viewBox="0 0 24 24" alt="Download">
+            <span class="ml-3 text-xl">WebClip</span>
+          </a>
+          <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+            <a href="/pricacy.html" class="mr-5 hover:text-gray-900">Pricacy</a>
+        </nav>
+          
+        </div>
+      </header>
+      <section class="text-gray-400 bg-gray-900 body-font">
+        <div class="container mx-auto flex flex-col px-5 py-24 justify-center items-center">
+          <img class="lg:w-3/6 md:w-5/6 w-5/6 mb-10 object-cover object-center rounded" alt="hero" src="https://dummyimage.com/1024x800">
+          <div class="w-full md:w-2/3 flex flex-col mb-16 items-center text-center">
+            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">Knausgaard typewriter readymade marfa</h1>
+            <p class="mb-8 leading-relaxed">Kickstarter biodiesel roof party wayfarers cold-pressed. Palo santo live-edge tumeric scenester copper mug flexitarian. Prism vice offal plaid everyday carry. Gluten-free chia VHS squid listicle artisan.</p>
+            <div class="flex w-full justify-center items-end">
+              <div class="relative mr-4 lg:w-full xl:w-1/2 w-2/4 md:w-full text-left">
+                <label for="email" class="leading-7 text-sm text-gray-400">Email</label>
+                <input type="email" id="email" name="email" class="w-full bg-gray-800 rounded border bg-opacity-40 border-gray-700 focus:ring-2 focus:ring-blue-900 focus:bg-transparent focus:border-blue-500 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+              </div>
+              <button id="CTA" class="inline-flex text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg">Subscribe</button>
+            </div>
+            <p class="text-sm mt-2 text-gray-500 mb-8 w-full">We will notify you by email when the product is available.</p>
+          </div>
+        </div>
+      </section>
+      <section class="text-gray-400 bg-gray-900 body-font">
+        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+            <div
+                class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+                <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white"> Simple Search interface
+                </h1>
+                <p class="mb-8 leading-relaxed">We've redesigned the layout of OneSearch to move the input box closer to your thumb . And, you can now search directly in the associated results instead of having to pick back and forth between other apps
+                    </p>
+                <div class="flex justify-center">
+                </div>
+            </div>
+            <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+                <img class="object-cover object-center rounded" alt="hero" src="video1.gif">
+            </div>
+        </div>
+    </section>
+    <section class="text-gray-400 bg-gray-900 body-font">
+        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+            <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+                <img class="object-cover object-center rounded" alt="hero" src="video2.gif">
+            </div>
+            <div
+                class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+                <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white"> Trigger Word
+                </h1>
+                <p class="mb-8 leading-relaxed">Type in the Target App Name your want to search in, it will search that app instantly.</p>
+
+            </div>
+        </div>
+    </section>
+    <section class="text-gray-400 bg-gray-900 body-font">
+      <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+          <div
+              class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+              <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white"> Search from Selected Text
+              </h1>
+              <p class="mb-8 leading-relaxed">You can search from the selected text anywhere on the Phone, just tap and hold the text and tap the share action
+                  </p>
+              <div class="flex justify-center">
+              </div>
+          </div>
+          <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+              <img class="object-cover object-center rounded" alt="hero" src="video3.gif">
+          </div>
+      </div>
+      <section class="text-gray-400 bg-gray-900 body-font">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-col text-center w-full mb-12">
+            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">Master Cleanse Reliac Heirloom</h1>
+            <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them man bun deep.</p>
+          </div>
+          <div class="flex lg:w-2/3 w-full sm:flex-row flex-col mx-auto px-8 sm:px-0 items-end sm:space-x-4 sm:space-y-0 space-y-4">
+            <div class="relative sm:mb-0 flex-grow w-full">
+              <label for="email" class="leading-7 text-sm text-gray-400">Email</label>
+              <input type="email" id="email2" name="email" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-blue-500 focus:ring-2 focus:ring-blue-900 focus:bg-transparent text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+            </div>
+            <button id="CTA2" class="text-white bg-blue-500 border-0 py-2 px-8 focus:outline-none hover:bg-blue-600 rounded text-lg">Button</button>
+          </div>
+        </div>
+        <br><br><br><br>
+      </section>
+      <footer class="text-gray-400 bg-gray-900 body-font">
+        <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+            <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
+
+                <img src="appicon.svg" fill="none" stroke="currentColor" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="2"
+                    class="w-10 h-10 text-white p-2" viewBox="0 0 24 24" alt="Download">
+                <span class="ml-3 text-xl">WebClip</span>
+            </a>
+            <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">©
+                2021 —
+                <a href="https://twitter.com/feng_yq" class="text-gray-600 ml-1" rel="noopener noreferrer"
+                    target="_blank">Twitter@FengYQ</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
